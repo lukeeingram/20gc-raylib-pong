@@ -53,3 +53,4 @@ dkms.conf
 
 # folder specific
 cmake-build-debug/
+.idea/
