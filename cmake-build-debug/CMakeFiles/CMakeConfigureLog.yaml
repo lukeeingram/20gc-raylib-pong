@@ -4,461 +4,586 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Darwin - 23.4.0 - x86_64
+      The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      ld: library 'System' not found
-      clang: error: linker command failed with exit code 1 (use -v to see invocation)
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Compiler: C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/gcc.exe 
       Build flags: 
-      Id flags: -c 
+      Id flags:  
       
       The output was:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
-      The C compiler identification is AppleClang, found in:
-        /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
+      The C compiler identification is GNU, found in:
+        C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D"
-      binary: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D"
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D'
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx'
         
-        Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_a6776
-        [1/2] /Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -c '/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c'
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: x86_64-apple-darwin23.4.0
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_7d14c/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7d14c.dir\\build.make CMakeFiles/cmTC_7d14c.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx'
+        Building C object CMakeFiles/cmTC_7d14c.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj -c "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -x c "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target x86_64-apple-darwin23.4.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\'
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_7d14c.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Luke\\AppData\\Local\\Temp\\ccWDCJsW.s
+        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
-        [2/2] : && /Library/Developer/CommandLineTools/usr/bin/cc -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -o cmTC_a6776   && :
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: x86_64-apple-darwin23.4.0
+        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\'
+         as -v -o CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Luke\\AppData\\Local\\Temp\\ccWDCJsW.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_7d14c.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7d14c.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7d14c.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_7d14c.dir/objects.a @CMakeFiles\\cmTC_7d14c.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_7d14c.dir/objects.a -Wl,--no-whole-archive -o cmTC_7d14c.exe -Wl,--out-implib,libcmTC_7d14c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Users/Luke/AppData/Local/Programs/CLion\\ Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_a6776 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1053.12
-        BUILD 15:44:24 Feb  3 2024
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
-        Library search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift
-        Framework search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d14c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7d14c.'
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_7d14c.exe C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_7d14c.dir/objects.a --no-whole-archive --out-implib libcmTC_7d14c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d14c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7d14c.'
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-          add: [/Library/Developer/CommandLineTools/usr/include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         end of search list found
-        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
-        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/include;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/x86_64-w64-mingw32/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D']
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx']
         ignore line: []
-        ignore line: [Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_a6776]
-        ignore line: [[1/2] /Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -c '/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c']
-        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
-        ignore line: [Target: x86_64-apple-darwin23.4.0]
+        ignore line: [Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_7d14c/fast]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7d14c.dir\\build.make CMakeFiles/cmTC_7d14c.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx']
+        ignore line: [Building C object CMakeFiles/cmTC_7d14c.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj -c "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uTud9D -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -x c "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"]
-        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target x86_64-apple-darwin23.4.0]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\']
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_7d14c.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Luke\\AppData\\Local\\Temp\\ccWDCJsW.s]
+        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /Library/Developer/CommandLineTools/usr/bin/cc -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -v -Wl -v CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -o cmTC_a6776   && :]
-        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
-        ignore line: [Target: x86_64-apple-darwin23.4.0]
+        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Luke\\AppData\\Local\\Temp\\ccWDCJsW.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7d14c.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_7d14c.exe]
+        ignore line: ["C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7d14c.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7d14c.dir/objects.a]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_7d14c.dir/objects.a @CMakeFiles\\cmTC_7d14c.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_7d14c.dir/objects.a -Wl --no-whole-archive -o cmTC_7d14c.exe -Wl --out-implib libcmTC_7d14c.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/Luke/AppData/Local/Programs/CLion\\ Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_a6776 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
-          arg [-demangle] ==> ignore
-          arg [-lto_library] ==> ignore, skip following value
-          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-          arg [-dynamic] ==> ignore
-          arg [-arch] ==> ignore
-          arg [x86_64] ==> ignore
-          arg [-platform_version] ==> ignore
-          arg [macos] ==> ignore
-          arg [14.0.0] ==> ignore
-          arg [14.4] ==> ignore
-          arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_a6776] ==> ignore
-          arg [-search_paths_first] ==> ignore
-          arg [-headerpad_max_install_names] ==> ignore
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a6776.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lSystem] ==> lib [System]
-          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
-        remove lib [System]
-        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib]
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d14c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7d14c.']
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_7d14c.exe C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_7d14c.dir/objects.a --no-whole-archive --out-implib libcmTC_7d14c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d14c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7d14c.']
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-40nrsx']
+        ignore line: []
+        ignore line: []
         implicit libs: []
         implicit objs: []
-        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
-      
-      
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      ld: library 'c++' not found
-      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        implicit dirs: []
+        implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Compiler: C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/g++.exe 
       Build flags: 
-      Id flags: -c 
+      Id flags:  
       
       The output was:
       0
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
-      The CXX compiler identification is AppleClang, found in:
-        /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      The CXX compiler identification is GNU, found in:
+        C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi"
-      binary: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi"
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi'
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx'
         
-        Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_19b98
-        [1/2] /Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -c '/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp'
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: x86_64-apple-darwin23.4.0
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_6d90e/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6d90e.dir\\build.make CMakeFiles/cmTC_6d90e.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx'
+        Building CXX object CMakeFiles/cmTC_6d90e.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -x c++ "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target x86_64-apple-darwin23.4.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\'
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_6d90e.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Luke\\AppData\\Local\\Temp\\ccOS3Qks.s
+        GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
-        [2/2] : && /Library/Developer/CommandLineTools/usr/bin/c++ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_19b98   && :
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: x86_64-apple-darwin23.4.0
+        Compiler executable checksum: e75de627edc3c57e31324b930b15b056
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\'
+         as -v -o CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Luke\\AppData\\Local\\Temp\\ccOS3Qks.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_6d90e.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6d90e.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6d90e.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_6d90e.dir/objects.a @CMakeFiles\\cmTC_6d90e.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl,--whole-archive CMakeFiles\\cmTC_6d90e.dir/objects.a -Wl,--no-whole-archive -o cmTC_6d90e.exe -Wl,--out-implib,libcmTC_6d90e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE
+        COLLECT_LTO_WRAPPER=C:/Users/Luke/AppData/Local/Programs/CLion\\ Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_19b98 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1053.12
-        BUILD 15:44:24 Feb  3 2024
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
-        Library search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift
-        Framework search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d90e.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6d90e.'
+         C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_6d90e.exe C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_6d90e.dir/objects.a --no-whole-archive --out-implib libcmTC_6d90e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d90e.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6d90e.'
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
-          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-          add: [/Library/Developer/CommandLineTools/usr/include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         end of search list found
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
-        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/include]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/include;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/x86_64-w64-mingw32/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi']
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx']
         ignore line: []
-        ignore line: [Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_19b98]
-        ignore line: [[1/2] /Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -c '/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp']
-        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
-        ignore line: [Target: x86_64-apple-darwin23.4.0]
+        ignore line: [Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_6d90e/fast]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6d90e.dir\\build.make CMakeFiles/cmTC_6d90e.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6d90e.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qXZOIi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -x c++ "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"]
-        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target x86_64-apple-darwin23.4.0]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\']
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_6d90e.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Luke\\AppData\\Local\\Temp\\ccOS3Qks.s]
+        ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /Library/Developer/CommandLineTools/usr/bin/c++ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -v -Wl -v CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_19b98   && :]
-        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
-        ignore line: [Target: x86_64-apple-darwin23.4.0]
+        ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Luke\\AppData\\Local\\Temp\\ccOS3Qks.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6d90e.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_6d90e.exe]
+        ignore line: ["C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6d90e.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6d90e.dir/objects.a]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_6d90e.dir/objects.a @CMakeFiles\\cmTC_6d90e.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl --whole-archive CMakeFiles\\cmTC_6d90e.dir/objects.a -Wl --no-whole-archive -o cmTC_6d90e.exe -Wl --out-implib libcmTC_6d90e.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/Luke/AppData/Local/Programs/CLion\\ Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_19b98 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
-          arg [-demangle] ==> ignore
-          arg [-lto_library] ==> ignore, skip following value
-          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-          arg [-dynamic] ==> ignore
-          arg [-arch] ==> ignore
-          arg [x86_64] ==> ignore
-          arg [-platform_version] ==> ignore
-          arg [macos] ==> ignore
-          arg [14.0.0] ==> ignore
-          arg [14.4] ==> ignore
-          arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_19b98] ==> ignore
-          arg [-search_paths_first] ==> ignore
-          arg [-headerpad_max_install_names] ==> ignore
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_19b98.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lc++] ==> lib [c++]
-          arg [-lSystem] ==> lib [System]
-          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
-        remove lib [System]
-        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib]
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
-        implicit libs: [c++]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d90e.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6d90e.']
+        ignore line: [ C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_6d90e.exe C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_6d90e.dir/objects.a --no-whole-archive --out-implib libcmTC_6d90e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d90e.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6d90e.']
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-44lwcx']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
         implicit objs: []
-        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
-        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        implicit dirs: []
+        implicit fwks: []
       
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
       - "cmake-build-debug/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
       - "cmake-build-debug/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
       - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:34 (include)"
     checks:
       - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
     directories:
-      source: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hvAFoy"
-      binary: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hvAFoy"
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l8dpp4"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l8dpp4"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-src/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_MODULE_PATH: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/cmake"
     buildResult:
       variable: "COMPILER_HAS_THOSE_TOGGLES"
       cached: true
       stdout: |
-        Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hvAFoy'
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l8dpp4'
         
-        Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_2e209
-        [1/2] /Library/Developer/CommandLineTools/usr/bin/cc -DCOMPILER_HAS_THOSE_TOGGLES  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -Werror=pointer-arith -MD -MT CMakeFiles/cmTC_2e209.dir/src.c.o -MF CMakeFiles/cmTC_2e209.dir/src.c.o.d -o CMakeFiles/cmTC_2e209.dir/src.c.o -c /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hvAFoy/src.c
-        [2/2] : && /Library/Developer/CommandLineTools/usr/bin/cc -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_2e209.dir/src.c.o -o cmTC_2e209   && :
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_ff5a2/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ff5a2.dir\\build.make CMakeFiles/cmTC_ff5a2.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l8dpp4'
+        Building C object CMakeFiles/cmTC_ff5a2.dir/src.c.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -DCOMPILER_HAS_THOSE_TOGGLES  -fdiagnostics-color=always   -Werror=pointer-arith -o CMakeFiles\\cmTC_ff5a2.dir\\src.c.obj -c C:\\Users\\Luke\\repos\\game-dev\\raylib\\20gc-raylib-pong\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-l8dpp4\\src.c
+        Linking C executable cmTC_ff5a2.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ff5a2.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ff5a2.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_ff5a2.dir/objects.a @CMakeFiles\\cmTC_ff5a2.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_ff5a2.dir/objects.a -Wl,--no-whole-archive -o cmTC_ff5a2.exe -Wl,--out-implib,libcmTC_ff5a2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ff5a2.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l8dpp4'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
       - "cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Wl7it"
-      binary: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Wl7it"
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-50zglb"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-50zglb"
     cmakeVariables:
       CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-src/cmake;/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_MODULE_PATH: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Wl7it'
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-50zglb'
         
-        Run Build Command(s): "/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -v cmTC_200dd
-        [1/2] /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_200dd.dir/src.c.o -MF CMakeFiles/cmTC_200dd.dir/src.c.o.d -o CMakeFiles/cmTC_200dd.dir/src.c.o -c /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Wl7it/src.c
-        [2/2] : && /Library/Developer/CommandLineTools/usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_200dd.dir/src.c.o -o cmTC_200dd   && :
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_ff266/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ff266.dir\\build.make CMakeFiles/cmTC_ff266.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-50zglb'
+        Building C object CMakeFiles/cmTC_ff266.dir/src.c.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -fdiagnostics-color=always -o CMakeFiles\\cmTC_ff266.dir\\src.c.obj -c C:\\Users\\Luke\\repos\\game-dev\\raylib\\20gc-raylib-pong\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-50zglb\\src.c
+        Linking C executable cmTC_ff266.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ff266.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ff266.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_ff266.dir/objects.a @CMakeFiles\\cmTC_ff266.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -Wl,--whole-archive CMakeFiles\\cmTC_ff266.dir/objects.a -Wl,--no-whole-archive -o cmTC_ff266.exe -Wl,--out-implib,libcmTC_ff266.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ff266.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-50zglb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:274 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pqlebn"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pqlebn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pqlebn'
+        
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_2155a/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2155a.dir\\build.make CMakeFiles/cmTC_2155a.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pqlebn'
+        Building C object CMakeFiles/cmTC_2155a.dir/CheckIncludeFile.c.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -fdiagnostics-color=always -o CMakeFiles\\cmTC_2155a.dir\\CheckIncludeFile.c.obj -c C:\\Users\\Luke\\repos\\game-dev\\raylib\\20gc-raylib-pong\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pqlebn\\CheckIncludeFile.c
+        Linking C executable cmTC_2155a.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2155a.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2155a.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_2155a.dir/objects.a @CMakeFiles\\cmTC_2155a.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -Wl,--whole-archive CMakeFiles\\cmTC_2155a.dir/objects.a -Wl,--no-whole-archive -o cmTC_2155a.exe -Wl,--out-implib,libcmTC_2155a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_2155a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pqlebn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:275 (check_include_file)"
+    checks:
+      - "Looking for xinput.h"
+    directories:
+      source: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-roio4g"
+      binary: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-roio4g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "XINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-roio4g'
+        
+        Run Build Command(s): "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_d4b9a/fast
+        C:/Users/Luke/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d4b9a.dir\\build.make CMakeFiles/cmTC_d4b9a.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-roio4g'
+        Building C object CMakeFiles/cmTC_d4b9a.dir/CheckIncludeFile.c.obj
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -fdiagnostics-color=always -o CMakeFiles\\cmTC_d4b9a.dir\\CheckIncludeFile.c.obj -c C:\\Users\\Luke\\repos\\game-dev\\raylib\\20gc-raylib-pong\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-roio4g\\CheckIncludeFile.c
+        Linking C executable cmTC_d4b9a.exe
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d4b9a.dir\\link.txt --verbose=1
+        "C:\\Users\\Luke\\AppData\\Local\\Programs\\CLion Nova\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d4b9a.dir/objects.a
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_d4b9a.dir/objects.a @CMakeFiles\\cmTC_d4b9a.dir\\objects1.rsp
+        C:\\Users\\Luke\\AppData\\Local\\Programs\\CLIONN~1\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -Wl,--whole-archive CMakeFiles\\cmTC_d4b9a.dir/objects.a -Wl,--no-whole-archive -o cmTC_d4b9a.exe -Wl,--out-implib,libcmTC_d4b9a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_d4b9a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-roio4g'
         
       exitCode: 0
 ...

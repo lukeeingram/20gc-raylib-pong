@@ -955,6 +955,22 @@ RMAPI Vector3 Vector3Lerp(Vector3 v1, Vector3 v2, float amount)
     return result;
 }
 
+// Calculate cubic hermite interpolation between two vectors and their tangents
+// as described in the GLTF 2.0 specification: https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#interpolation-cubic
+RMAPI Vector3 Vector3CubicHermite(Vector3 v1, Vector3 tangent1, Vector3 v2, Vector3 tangent2, float amount)
+{
+    Vector3 result = { 0 };
+
+    float amountPow2 = amount * amount;
+    float amountPow3 = amount * amount * amount;
+
+    result.x = (2 * amountPow3 - 3 * amountPow2 + 1) * v1.x + (amountPow3 - 2 * amountPow2 + amount) * tangent1.x + (-2 * amountPow3 + 3 * amountPow2) * v2.x + (amountPow3 - amountPow2) * tangent2.x;
+    result.y = (2 * amountPow3 - 3 * amountPow2 + 1) * v1.y + (amountPow3 - 2 * amountPow2 + amount) * tangent1.y + (-2 * amountPow3 + 3 * amountPow2) * v2.y + (amountPow3 - amountPow2) * tangent2.y;
+    result.z = (2 * amountPow3 - 3 * amountPow2 + 1) * v1.z + (amountPow3 - 2 * amountPow2 + amount) * tangent1.z + (-2 * amountPow3 + 3 * amountPow2) * v2.z + (amountPow3 - amountPow2) * tangent2.z;
+
+    return result;
+}
+
 // Calculate reflected vector to normal
 RMAPI Vector3 Vector3Reflect(Vector3 v, Vector3 normal)
 {
@@ -2193,6 +2209,32 @@ RMAPI Quaternion QuaternionSlerp(Quaternion q1, Quaternion q2, float amount)
             result.w = (q1.w*ratioA + q2.w*ratioB);
         }
     }
+
+    return result;
+}
+
+// Calculate quaternion cubic spline interpolation using Cubic Hermite Spline algorithm
+// as described in the GLTF 2.0 specification: https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#interpolation-cubic
+RMAPI Quaternion QuaternionCubicHermiteSpline(Quaternion q1, Quaternion outTangent1, Quaternion q2, Quaternion inTangent2, float t)
+{
+    float t2 = t * t;
+    float t3 = t2 * t;
+    float h00 = 2 * t3 - 3 * t2 + 1;
+    float h10 = t3 - 2 * t2 + t;    
+    float h01 = -2 * t3 + 3 * t2;   
+    float h11 = t3 - t2;            
+
+    Quaternion p0 = QuaternionScale(q1, h00);
+    Quaternion m0 = QuaternionScale(outTangent1, h10);
+    Quaternion p1 = QuaternionScale(q2, h01);
+    Quaternion m1 = QuaternionScale(inTangent2, h11);
+
+    Quaternion result = { 0 };
+
+    result = QuaternionAdd(p0, m0);
+    result = QuaternionAdd(result, p1);
+    result = QuaternionAdd(result, m1);
+    result = QuaternionNormalize(result);
 
     return result;
 }

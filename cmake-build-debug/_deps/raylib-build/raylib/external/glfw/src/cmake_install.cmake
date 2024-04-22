@@ -1,8 +1,8 @@
-# Install script for directory: /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/src
+# Install script for directory: C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-src/src/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/pong")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/objdump.exe")
 endif()
 

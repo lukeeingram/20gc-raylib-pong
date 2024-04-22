@@ -1,34 +1,68 @@
-"/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/lonk/Applications/CLion Nova.app/Contents/bin/ninja/mac/x64/ninja" -G Ninja -S /Users/lonk/repos/game-dev/raylib-projects/pong -B /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug
+"C:\Users\Luke\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Luke\repos\game-dev\raylib\20gc-raylib-pong -B C:\Users\Luke\repos\game-dev\raylib\20gc-raylib-pong\cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- The C compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Populating raylib
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild
-[0/7] Performing update step for 'raylib-populate'
-From https://github.com/raysan5/raylib
-   04afba26..b3dfa2d8  master     -> origin/master
-[1/7] No patch step for 'raylib-populate'
-[3/7] No configure step for 'raylib-populate'
-[4/7] No build step for 'raylib-populate'
-[5/7] No install step for 'raylib-populate'
-[6/7] No test step for 'raylib-populate'
-[7/7] Completed 'raylib-populate'
+-- Build files have been written to: C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild
+[ 11%] Creating directories for 'raylib-populate'
+[ 22%] Performing download step (git clone) for 'raylib-populate'
+Cloning into 'raylib-src'...
+remote: Enumerating objects: 42972, done.        
+remote: Counting objects: 100% (492/492), done.        
+remote: Compressing objects: 100% (242/242), done.        
+remote: Total 42972 (delta 312), reused 387 (delta 250), pack-reused 42480        
+Receiving objects: 100% (42972/42972), 385.64 MiB | 50.77 MiB/s, done.
+Resolving deltas: 100% (31349/31349), done.
+Your branch is up to date with 'origin/master'.
+Already on 'master'
+[ 33%] Performing update step for 'raylib-populate'
+[ 44%] No patch step for 'raylib-populate'
+[ 55%] No configure step for 'raylib-populate'
+[ 66%] No build step for 'raylib-populate'
+[ 77%] No install step for 'raylib-populate'
+[ 88%] No test step for 'raylib-populate'
+[100%] Completed 'raylib-populate'
+[100%] Built target raylib-populate
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_HAS_THOSE_TOGGLES
+-- Performing Test COMPILER_HAS_THOSE_TOGGLES - Success
 -- Testing if -Werror=pointer-arith can be used -- compiles
 -- Testing if -Werror=implicit-function-declaration can be used -- compiles
 -- Testing if -fno-strict-aliasing can be used -- compiles
 -- Using raylib's GLFW
--- Including Cocoa support
-CMake Warning (dev) at cmake-build-debug/_deps/raylib-src/cmake/LibraryConfigurations.cmake:22 (MESSAGE):
-  OpenGL is deprecated starting with macOS 10.14 (Mojave)!
-Call Stack (most recent call first):
-  cmake-build-debug/_deps/raylib-src/src/CMakeLists.txt:48 (include)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Including Win32 support
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Looking for xinput.h
+-- Looking for xinput.h - found
 -- Audio Backend: miniaudio
 -- Building raylib static library
 -- Generated build type: Debug
 -- Compiling with the flags:
 --   PLATFORM=PLATFORM_DESKTOP
 --   GRAPHICS=GRAPHICS_API_OPENGL_33
--- Configuring done (3.4s)
+-- Configuring done (17.6s)
 -- Generating done (0.1s)
--- Build files have been written to: /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug
+-- Build files have been written to: C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug

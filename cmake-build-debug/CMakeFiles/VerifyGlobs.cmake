@@ -3,11 +3,11 @@
 cmake_policy(SET CMP0009 NEW)
 
 # PROJECT_SOURCES at CMakeLists.txt:20 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/lonk/repos/game-dev/raylib-projects/pong/src/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/src/*.c")
 set(OLD_GLOB
-  "/Users/lonk/repos/game-dev/raylib-projects/pong/src/main.c"
+  "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/src/main.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()

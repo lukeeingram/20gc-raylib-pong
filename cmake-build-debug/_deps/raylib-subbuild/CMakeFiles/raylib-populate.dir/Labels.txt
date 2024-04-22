@@ -1,14 +1,14 @@
 # Target labels
  raylib-populate
 # Source files and their labels
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule
-/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule
+C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule

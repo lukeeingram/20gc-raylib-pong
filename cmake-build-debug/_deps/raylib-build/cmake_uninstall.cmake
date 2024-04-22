@@ -1,14 +1,14 @@
-if(NOT EXISTS "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/install_manifest.txt")
+if(NOT EXISTS "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/install_manifest.txt")
 endif()
 
-file(READ "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/install_manifest.txt" files)
+file(READ "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${file}" OR EXISTS "$ENV{DESTDIR}${file}")
     exec_program(
-      "/Users/lonk/Applications/CLion Nova.app/Contents/bin/cmake/mac/x64/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "C:/Users/Luke/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

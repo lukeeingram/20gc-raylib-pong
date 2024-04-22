@@ -1,8 +1,8 @@
-# Install script for directory: /Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild
+# Install script for directory: C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/raylib-populate")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lonk/repos/game-dev/raylib-projects/pong/cmake-build-debug/_deps/raylib-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Luke/repos/game-dev/raylib/20gc-raylib-pong/cmake-build-debug/_deps/raylib-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
