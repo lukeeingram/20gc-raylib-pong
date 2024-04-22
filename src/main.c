@@ -4,14 +4,18 @@
  */
 
 #include <stdio.h>
+#include <time.h>
 #include <sys/stat.h>
 
 #include "../cmake-build-debug/_deps/raylib-src/src/raylib.h"
 #include "../cmake-build-debug/_deps/raylib-src/src/raymath.h"
 
-Vector2 getRandomStartDirection() {
-	Vector2 startDir = {GetRandomValue(-1, 1), GetRandomValue(-1, 1)};
-	return startDir;
+void reset(float ballCurrentPos, float resetPos) {
+	ballCurrentPos = resetPos;
+}
+
+void scoreIncrease(int score) {
+	score += 1;
 }
 
 int main(void) {
@@ -19,6 +23,14 @@ int main(void) {
 	// Screen size constants
 	const int windowWidth = 800;
 	const int windowHeight = 400;
+
+	// Create window, set target FPS
+	InitWindow(windowWidth, windowHeight, "Pong");
+	SetTargetFPS(60);
+
+	// Use default system time to create a random seed
+	// Random values below will not work otherwise
+	SetRandomSeed(time(NULL));
 
 	// Rectangles
 	Rectangle player = {20.0f, windowHeight / 2, 25.0f, 100.0f};
@@ -33,8 +45,21 @@ int main(void) {
 	Vector2 ballOGPos = {ball.x, ball.y};
 
 	// Give the ball a random direction for game start
-	Vector2 ballDirection = {1.0f, 1.0f};
-	ballDirection = getRandomStartDirection();
+	Vector2 randomStartDirection = {GetRandomValue(-1.0f, 1.0f), GetRandomValue(-1.0f, 1.0f)};
+	Vector2 ballDirection = {};
+	if (randomStartDirection.x <= 0) {
+		ballDirection.x = -1.0f;
+	} else {
+		ballDirection.x = 1.0f;
+	}
+
+	if (randomStartDirection.y <= 0)
+	{
+		ballDirection.y = -1.0f;
+	} else
+	{
+		ballDirection.y = 1.0f;
+	}
 
 	// Speed
 	float paddleSpeed = 150.0f;
@@ -44,10 +69,6 @@ int main(void) {
 	// Scoring
 	int playerScore = 0;
 	int enemyScore = 0;
-
-	// Create window, set target FPS
-	InitWindow(windowWidth, windowHeight, "Pong");
-	SetTargetFPS(60);
 
 	// ----------------------------------------------------------
 	// Main game loop
@@ -69,9 +90,6 @@ int main(void) {
 		// Move the ball
 		ball.x += ballSpeed * ballDirection.x * dt;
 		ball.y += ballSpeed * ballDirection.y * dt;
-
-		// printf("X: %1.2f\n", ball.x);
-		// printf("Y: %1.2f\n", ball.y);
 
 		// Keep the ball in the screen bounds
 		ball.y = Clamp(ball.y, 0, windowHeight - ball.height);
