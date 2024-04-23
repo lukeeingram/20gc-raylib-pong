@@ -12,10 +12,8 @@
 
 void ResetBallPosition(Rectangle *ball, float initialBallX, float initialBallY);
 
-typedef enum GameState
-{
+typedef enum GameState {
 	GAME_ACTIVE,
-	GAME_PAUSED,
 	GAME_OVER
 } GameState;
 
@@ -34,9 +32,9 @@ int main(void) {
 	SetRandomSeed(time(NULL));
 
 	// Rectangles
-	Rectangle player = {20.0f, windowHeight / 2, 25.0f, 100.0f};
-	Rectangle enemy = { windowWidth - 50.0f, windowHeight / 2, 25.0f, 100.0f};
-	Rectangle ball = {windowWidth / 2, windowHeight / 2, 20.0f, 20.0f};
+	Rectangle player = {20.0f, windowHeight / 2, 20.0f, 80.0f};
+	Rectangle enemy = { windowWidth - 50.0f, windowHeight / 2, 20.0f, 80.0f};
+	Rectangle ball = {windowWidth / 2, windowHeight / 2, 10.0f, 10.0f};
 	Rectangle playerScoreArea = {-20.0f, 0.0f, 30.0f, windowHeight};
 	Rectangle enemyScoreArea = {windowWidth - 10.0f, 0.0f, 30.0f, windowHeight};
 
@@ -64,7 +62,7 @@ int main(void) {
 	float paddleSpeed = 150.0f;
 	float ballSpeed = 100.0f;
 	float initialBallSpeed = ballSpeed;
-	float ballSpeedMultiplier = 5.5f;
+	float ballSpeedMultiplier = 2.5f;
 
 	// Scoring
 	int playerScore = 0;
@@ -123,7 +121,6 @@ int main(void) {
 			{
 				enemyScore += 1;
 				ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-				printf("Enemy score: %d\n", enemyScore);
 				ballSpeed = initialBallSpeed;
 			}
 
@@ -131,13 +128,17 @@ int main(void) {
 			{
 				playerScore += 1;
 				ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-				printf("Player score: %d\n", playerScore);
 				ballSpeed = initialBallSpeed;
 			}
 
-			if (playerScore >= 10 || enemyScore >= 10)
+			if (playerScore >= 5 || enemyScore >= 5)
 			{
 				currentGameState = GAME_OVER;
+			}
+
+			// Reset the game if state is game_over
+			if (currentGameState == GAME_OVER) {
+
 			}
 		}
 
@@ -153,6 +154,9 @@ int main(void) {
 			DrawRectangleRec(enemyScoreArea, LIGHTGRAY);
 			DrawText(TextFormat("Player: %i", playerScore), 100, 10, 20, BLACK);
 			DrawText(TextFormat("Enemy: %i", enemyScore), 600, 10, 20, BLACK);
+		} else if (GAME_OVER == currentGameState) {
+			DrawText("Game Over", windowWidth / 2 - MeasureText("Game Over", 20) / 2, windowHeight / 2 - 10, 20, BLACK);
+			DrawText("Press 'R' to Restart", windowWidth /2 - MeasureText("Press 'R' to Restart", 20) / 2, windowHeight / 2 + 20, 20, BLACK);
 		}
 		EndDrawing();
 
