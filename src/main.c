@@ -11,6 +11,7 @@
 #include "../cmake-build-debug/_deps/raylib-src/src/raymath.h"
 
 void ResetBallPosition(Rectangle *ball, float initialBallX, float initialBallY);
+void ResetGameState(int playerScore, int enemyScore);
 
 typedef enum GameState {
 	GAME_ACTIVE,
@@ -77,6 +78,8 @@ int main(void) {
 	{
 		// ----------------------------------------------------------
 		// Update
+
+
 		if (GAME_ACTIVE == currentGameState)
 		{
 			// Delta time
@@ -131,14 +134,21 @@ int main(void) {
 				ballSpeed = initialBallSpeed;
 			}
 
-			if (playerScore >= 5 || enemyScore >= 5)
+			if (playerScore >= 1 || enemyScore >= 1)
 			{
 				currentGameState = GAME_OVER;
 			}
 
-			// Reset the game if state is game_over
-			if (currentGameState == GAME_OVER) {
 
+		}
+		// Reset the game if state is game_over
+		if (currentGameState == GAME_OVER) {
+			printf("Current game state: %d", currentGameState);
+			if (IsKeyPressed(KEY_R)) {
+				printf("Reset key pressed!");
+				ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+				ResetGameState(playerScore, enemyScore);
+				currentGameState = GAME_ACTIVE;
 			}
 		}
 
@@ -172,4 +182,9 @@ void ResetBallPosition(Rectangle *ball, float initialBallX, float initialBallY)
 {
 	ball->x = initialBallX;
 	ball->y = initialBallY;
+}
+
+void ResetGameState(int playerScore, int enemyScore) {
+	playerScore = 0;
+	enemyScore = 0;
 }
