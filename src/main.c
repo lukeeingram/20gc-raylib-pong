@@ -1,6 +1,7 @@
 /*
  *	Written by Luke Ingram in C99 to learn game development.
  *	Created using raylib 5.0 in Clion.
+ *	Sounds from zapsplat.com
  */
 
 #include <stdio.h>
@@ -80,6 +81,11 @@ int main(void) {
 
 	bool paused = false;
 
+	// Audio
+	InitAudioDevice();
+	Sound blip = LoadSound("../assets/blip.wav");
+	Sound gameFinish = LoadSound("../assets/end_finish.wav");
+
 	// ----------------------------------------------------------
 	// Main game loop
 	while(!WindowShouldClose())
@@ -137,8 +143,14 @@ int main(void) {
 					ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
 
 					// Collision
-					if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
-					if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
+					if (CheckCollisionRecs(ball, player)) {
+						ballSpeed *= -ballSpeedMultiplier;
+						PlaySound(blip);
+					}
+					if (CheckCollisionRecs(ball, enemy)) {
+						ballSpeed *= -ballSpeedMultiplier;
+						PlaySound(blip);
+					}
 
 					// Collision with scoring
 					if (CheckCollisionRecs(ball, playerScoreArea)) {
@@ -156,6 +168,7 @@ int main(void) {
 					if (playerScore >= 5 || enemyScore >= 5) {
 						previousScreen = currentScreen;
 						currentScreen = GAMEOVER;
+						PlaySound(gameFinish);
 					}
 
 					// Pause/unpause the game
@@ -196,8 +209,14 @@ int main(void) {
 					ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
 
 					// Collision
-					if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
-					if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
+					if (CheckCollisionRecs(ball, player)) {
+						ballSpeed *= -ballSpeedMultiplier;
+						PlaySound(blip);
+					}
+					if (CheckCollisionRecs(ball, enemy)) {
+						ballSpeed *= -ballSpeedMultiplier;
+						PlaySound(blip);
+					}
 
 					// Collision with scoring
 					if (CheckCollisionRecs(ball, playerScoreArea)) {
@@ -214,6 +233,7 @@ int main(void) {
 					if (playerScore >= 5 || enemyScore >= 5) {
 						previousScreen = currentScreen;
 						currentScreen = GAMEOVER;
+						PlaySound(gameFinish);
 					}
 
 					// Pause/unpause the game
@@ -258,6 +278,22 @@ int main(void) {
 			} break;
 
 			case GAMEOVER: {
+				if (IsKeyPressed(KEY_R) && previousScreen == GAME_AI) {
+					playerScore = 0;
+					enemyScore = 0;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					paused = false;
+					currentScreen = GAME_AI;
+				}
+
+				if (IsKeyPressed(KEY_R) && previousScreen == GAME_2P) {
+					playerScore = 0;
+					enemyScore = 0;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					paused = false;
+					currentScreen = GAME_2P;
+				}
+
 				if (IsKeyPressed(KEY_M)) {
 					playerScore = 0;
 					enemyScore = 0;
@@ -338,9 +374,15 @@ int main(void) {
 					20,
 					BLACK);
 
+				DrawText("Press R to reset the game",
+						screenWidth / 2 - MeasureText("Press R to re", 20),
+						screenHeight / 2 + 20,
+						20,
+						BLACK);
+
 				DrawText("Press 'M' to go to the Main Menu",
 				         screenWidth / 2 - MeasureText("Press 'M' to go to the Main Menu", 20) / 2,
-				         screenHeight / 2 + 20,
+				         screenHeight / 2 + 40,
 				         20,
 				         BLACK);
 			} break;
@@ -352,6 +394,9 @@ int main(void) {
 	// ----------------------------------------------------------
 	// De-initialization
 	UnloadTexture(texture);
+	UnloadSound(blip);
+	UnloadSound(gameFinish);
+	CloseAudioDevice();
 	CloseWindow();
 	return 0;
 }
