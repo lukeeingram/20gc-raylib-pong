@@ -159,7 +159,7 @@ int main(void) {
 					}
 
 					// Pause/unpause the game
-					if (IsKeyDown(KEY_P) && !paused) {
+					if (IsKeyPressed(KEY_P)) {
 						paused = true;
 						previousScreen = currentScreen;
 						currentScreen = GAMEPAUSED;
@@ -217,7 +217,7 @@ int main(void) {
 					}
 
 					// Pause/unpause the game
-					if (IsKeyDown(KEY_P) && !paused) {
+					if (IsKeyPressed(KEY_P)) {
 						paused = true;
 						previousScreen = currentScreen;
 						currentScreen = GAMEPAUSED;
@@ -226,15 +226,29 @@ int main(void) {
 			} break;
 
 			case GAMEPAUSED: {
-				if (IsKeyDown(KEY_P) && previousScreen == GAME_AI) {
+				if (IsKeyPressed(KEY_P) && previousScreen == GAME_AI) {
 					paused = false;
 					currentScreen = GAME_AI;
 				}
-				if (IsKeyDown(KEY_P) && previousScreen == GAME_2P) {
+				if (IsKeyPressed(KEY_P) && previousScreen == GAME_2P) {
 					paused = false;
 					currentScreen = GAME_2P;
 				}
-				if (IsKeyDown(KEY_M)) {
+				if (IsKeyPressed(KEY_R) && previousScreen == GAME_AI) {
+					playerScore = 0;
+					enemyScore = 0;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					paused = false;
+					currentScreen = GAME_AI;
+				}
+				if (IsKeyPressed(KEY_R) && previousScreen == GAME_2P) {
+					playerScore = 0;
+					enemyScore = 0;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					paused = false;
+					currentScreen = GAME_2P;
+				}
+				if (IsKeyPressed(KEY_M)) {
 					playerScore = 0;
 					enemyScore = 0;
 					paused = false;
@@ -244,7 +258,7 @@ int main(void) {
 			} break;
 
 			case GAMEOVER: {
-				if (IsKeyDown(KEY_M)) {
+				if (IsKeyPressed(KEY_M)) {
 					playerScore = 0;
 					enemyScore = 0;
 					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
@@ -303,6 +317,12 @@ int main(void) {
 				         screenHeight / 2 + 40,
 				         20,
 				         BLACK);
+
+				DrawText("Press R to reset the game",
+						screenWidth / 2 - MeasureText("Press R to re", 20),
+						screenHeight / 2 + 60,
+						20,
+						BLACK);
 
 				DrawText("Press M to go to the main menu",
 						screenWidth / 2 - MeasureText("Press M to go", 20),
