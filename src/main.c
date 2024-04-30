@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <time.h>
 #include <sys/stat.h>
-
 #include "../cmake-build-debug/_deps/raylib-src/src/raylib.h"
 #include "../cmake-build-debug/_deps/raylib-src/src/raymath.h"
 
@@ -31,8 +30,14 @@ int main(void) {
 	InitWindow(screenWidth, screenHeight, "Pong");
 	SetTargetFPS(60);
 
+	// Create the logo texture for the main menu
+	Image logo = LoadImage("../assets/logo.png");
+	Texture2D texture = LoadTextureFromImage(logo);
+	UnloadImage(logo);
+
 	// Set game screen
 	GameScreen currentScreen = TITLE;
+	GameScreen previousScreen = currentScreen;
 
 	// Use default system time to create a random seed
 	// Random values below will not work otherwise
@@ -73,6 +78,8 @@ int main(void) {
 	int playerScore = 0;
 	int enemyScore = 0;
 
+	bool paused = false;
+
 	// ----------------------------------------------------------
 	// Main game loop
 	while(!WindowShouldClose())
@@ -95,117 +102,155 @@ int main(void) {
 			} break;
 
 			case GAME_AI: {
-				// Delta time
-				float dt = GetFrameTime();
+				if (!paused) {
+					// Delta time
+					float dt = GetFrameTime();
 
-				// Move player
-				if (IsKeyDown(KEY_DOWN) || IsKeyDown(KEY_S)) player.y += (paddleSpeed * dt);
-				if (IsKeyDown(KEY_UP) || IsKeyDown(KEY_W)) player.y -= (paddleSpeed * dt);
+					// Move player
+					if (IsKeyDown(KEY_DOWN) || IsKeyDown(KEY_S)) player.y += (paddleSpeed * dt);
+					if (IsKeyDown(KEY_UP) || IsKeyDown(KEY_W)) player.y -= (paddleSpeed * dt);
 
-				// Move the enemy paddle
-				if (ball.x >= screenWidth / 2)
-				{
-					if (ball.y > enemy.y) {
-						enemy.y += (paddleSpeed * dt);
+					// Move the enemy paddle
+					if (ball.x >= screenWidth / 2)
+					{
+						if (ball.y > enemy.y) {
+							enemy.y += (paddleSpeed * dt);
+						}
+						if (ball.y < enemy.y) {
+							enemy.y -= (paddleSpeed * dt);
+						}
 					}
-					if (ball.y < enemy.y) {
-						enemy.y -= (paddleSpeed * dt);
+
+					// Keep the paddles in the screen bounds
+					player.y = Clamp(player.y, 0, screenHeight - player.height);
+					enemy.y = Clamp(enemy.y, 0, screenHeight - enemy.height);
+
+					// Move the ball
+					ball.x += ballSpeed * ballDirection.x * dt;
+					ball.y += ballSpeed * ballDirection.y * dt;
+
+					// Keep the ball in the screen bounds
+					ball.y = Clamp(ball.y, 0, screenHeight - ball.height);
+					if (ball.y == 0 || ball.y == screenHeight - ball.height) ballDirection.y *= -1;
+
+					// Clamp the ball's speed so that it doesn't go bananas
+					ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
+
+					// Collision
+					if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
+					if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
+
+					// Collision with scoring
+					if (CheckCollisionRecs(ball, playerScoreArea)) {
+						enemyScore += 1;
+						ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+						ballSpeed = initialBallSpeed;
+					}
+
+					if (CheckCollisionRecs(ball, enemyScoreArea)) {
+						playerScore += 1;
+						ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+						ballSpeed = initialBallSpeed;
+					}
+
+					if (playerScore >= 5 || enemyScore >= 5) {
+						previousScreen = currentScreen;
+						currentScreen = GAMEOVER;
+					}
+
+					// Pause/unpause the game
+					if (IsKeyDown(KEY_P) && !paused) {
+						paused = true;
+						previousScreen = currentScreen;
+						currentScreen = GAMEPAUSED;
 					}
 				}
-
-				// Keep the paddles in the screen bounds
-				player.y = Clamp(player.y, 0, screenHeight - player.height);
-				enemy.y = Clamp(enemy.y, 0, screenHeight - enemy.height);
-
-				// Move the ball
-				ball.x += ballSpeed * ballDirection.x * dt;
-				ball.y += ballSpeed * ballDirection.y * dt;
-
-				// Keep the ball in the screen bounds
-				ball.y = Clamp(ball.y, 0, screenHeight - ball.height);
-				if (ball.y == 0 || ball.y == screenHeight - ball.height) ballDirection.y *= -1;
-
-				// Clamp the ball's speed so that it doesn't go bananas
-				ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
-
-				// Collision
-				if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
-				if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
-
-				// Collision with scoring
-				if (CheckCollisionRecs(ball, playerScoreArea)) {
-					enemyScore += 1;
-					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-					ballSpeed = initialBallSpeed;
-				}
-
-				if (CheckCollisionRecs(ball, enemyScoreArea)) {
-					playerScore += 1;
-					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-					ballSpeed = initialBallSpeed;
-				}
-
-				if (playerScore >= 5 || enemyScore >= 5) currentScreen = GAMEOVER;
-
 			} break;
 
 			case GAME_2P: {
-				// Delta time
-				float dt = GetFrameTime();
+				if (!paused) {
+					// Delta time
+					float dt = GetFrameTime();
 
-				// Move player
-				if (IsKeyDown(KEY_W)) player.y -= (paddleSpeed * dt);
-				if (IsKeyDown(KEY_S)) player.y += (paddleSpeed * dt);
+					// Move player
+					if (IsKeyDown(KEY_W)) player.y -= (paddleSpeed * dt);
+					if (IsKeyDown(KEY_S)) player.y += (paddleSpeed * dt);
 
-				// Move 2P
-				if (IsKeyDown(KEY_DOWN)) enemy.y += (paddleSpeed * dt);
-				if (IsKeyDown(KEY_UP)) enemy.y -= (paddleSpeed * dt);
+					// Move 2P
+					if (IsKeyDown(KEY_DOWN)) enemy.y += (paddleSpeed * dt);
+					if (IsKeyDown(KEY_UP)) enemy.y -= (paddleSpeed * dt);
 
-				// Keep the paddles in the screen bounds
-				player.y = Clamp(player.y, 0, screenHeight - player.height);
-				enemy.y = Clamp(enemy.y, 0, screenHeight - enemy.height);
+					// Keep the paddles in the screen bounds
+					player.y = Clamp(player.y, 0, screenHeight - player.height);
+					enemy.y = Clamp(enemy.y, 0, screenHeight - enemy.height);
 
-				// Move the ball
-				ball.x += ballSpeed * ballDirection.x * dt;
-				ball.y += ballSpeed * ballDirection.y * dt;
+					// Move the ball
+					ball.x += ballSpeed * ballDirection.x * dt;
+					ball.y += ballSpeed * ballDirection.y * dt;
 
-				// Keep the ball in the screen bounds
-				ball.y = Clamp(ball.y, 0, screenHeight - ball.height);
-				if (ball.y == 0 || ball.y == screenHeight - ball.height) ballDirection.y *= -1;
+					// Keep the ball in the screen bounds
+					ball.y = Clamp(ball.y, 0, screenHeight - ball.height);
+					if (ball.y == 0 || ball.y == screenHeight - ball.height) ballDirection.y *= -1;
 
-				// Clamp the ball's speed so that it doesn't go bananas
-				ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
+					// Clamp the ball's speed so that it doesn't go bananas
+					ballSpeed = Clamp(ballSpeed, -2500.0f, 2500.0f);
 
-				// Collision
-				if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
-				if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
+					// Collision
+					if (CheckCollisionRecs(ball, player)) ballSpeed *= -ballSpeedMultiplier;
+					if (CheckCollisionRecs(ball, enemy)) ballSpeed *= -ballSpeedMultiplier;
 
-				// Collision with scoring
-				if (CheckCollisionRecs(ball, playerScoreArea))
-				{
-					enemyScore += 1;
-					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-					ballSpeed = initialBallSpeed;
+					// Collision with scoring
+					if (CheckCollisionRecs(ball, playerScoreArea)) {
+						enemyScore += 1;
+						ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+						ballSpeed = initialBallSpeed;
+					}
+
+					if (CheckCollisionRecs(ball, enemyScoreArea)) {
+						playerScore += 1;
+						ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+						ballSpeed = initialBallSpeed;
+					}
+					if (playerScore >= 5 || enemyScore >= 5) {
+						previousScreen = currentScreen;
+						currentScreen = GAMEOVER;
+					}
+
+					// Pause/unpause the game
+					if (IsKeyDown(KEY_P) && !paused) {
+						paused = true;
+						previousScreen = currentScreen;
+						currentScreen = GAMEPAUSED;
+					}
 				}
+			} break;
 
-				if (CheckCollisionRecs(ball, enemyScoreArea))
-				{
-					playerScore += 1;
-					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
-					ballSpeed = initialBallSpeed;
+			case GAMEPAUSED: {
+				if (IsKeyDown(KEY_P) && previousScreen == GAME_AI) {
+					paused = false;
+					currentScreen = GAME_AI;
 				}
-				if (playerScore >= 5 || enemyScore >= 5) currentScreen = GAMEOVER;
-
+				if (IsKeyDown(KEY_P) && previousScreen == GAME_2P) {
+					paused = false;
+					currentScreen = GAME_2P;
+				}
+				if (IsKeyDown(KEY_M)) {
+					playerScore = 0;
+					enemyScore = 0;
+					paused = false;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					currentScreen = TITLE;
+				}
 			} break;
 
 			case GAMEOVER: {
-					if (IsKeyDown(KEY_M)) {
-						playerScore = 0;
-						enemyScore = 0;
-						currentScreen = TITLE;
-					}
+				if (IsKeyDown(KEY_M)) {
+					playerScore = 0;
+					enemyScore = 0;
+					ResetBallPosition(&ball, ballOGPos.x, ballOGPos.y);
+					currentScreen = TITLE;
+				}
 			}
-
 			default: break;
 		}
 
@@ -216,9 +261,14 @@ int main(void) {
 
 		switch (currentScreen) {
 			case TITLE: {
-				DrawText("1. Game vs A.I.", screenWidth / 2 - MeasureText("Game vs AI", 20), screenHeight / 2, 20, BLACK);
-				DrawText("2. Game vs 2P", screenWidth / 2 - MeasureText("Game vs 2P", 20) ,screenHeight / 2 + 40, 20, BLACK);
-				DrawText("3. Quit Game", screenWidth / 2 - MeasureText("3. Quit Game", 20) + 6, screenHeight / 2 + 80, 20, BLACK);
+				DrawTexture(texture,
+					screenWidth / 2 - texture.width / 2,
+					screenHeight / 2 - texture.height / 2 - 125,
+					WHITE);
+
+				DrawText("1. Game vs A.I.", screenWidth / 2 - 60, screenHeight / 2, 20, BLACK);
+				DrawText("2. Game vs 2P", screenWidth / 2 - 60,screenHeight / 2 + 40, 20, BLACK);
+				DrawText("3. Quit Game", screenWidth / 2 - 60, screenHeight / 2 + 80, 20, BLACK);
 			} break;
 
 			case GAME_AI: {
@@ -242,22 +292,46 @@ int main(void) {
 			} break;
 
 			case GAMEPAUSED: {
+				DrawText("Game Paused",
+					screenWidth / 2 - MeasureText("Game", 20),
+					screenHeight / 2,
+					20,
+					BLACK);
 
+				DrawText("Press P to unpause the game",
+				         screenWidth / 2 - MeasureText("Press P to go", 20),
+				         screenHeight / 2 + 40,
+				         20,
+				         BLACK);
+
+				DrawText("Press M to go to the main menu",
+						screenWidth / 2 - MeasureText("Press M to go", 20),
+						screenHeight / 2 + 80,
+						20,
+						BLACK);
 			} break;
 
 			case GAMEOVER: {
-				DrawText("Game Over", screenWidth / 2 - MeasureText("Game Over", 20) / 2, screenHeight / 2 - 10, 20, BLACK);
-				DrawText("Press 'M' to go to the Main Menu", screenWidth /2 - MeasureText("Press 'M' to go to the Main Menu", 20) / 2, screenHeight / 2 + 20, 20, BLACK);
-			} break;
+				DrawText("Game Over",
+					screenWidth / 2 - MeasureText("Game Over", 20) / 2,
+					screenHeight / 2 - 10,
+					20,
+					BLACK);
 
+				DrawText("Press 'M' to go to the Main Menu",
+				         screenWidth / 2 - MeasureText("Press 'M' to go to the Main Menu", 20) / 2,
+				         screenHeight / 2 + 20,
+				         20,
+				         BLACK);
+			} break;
 			default: break;
 		}
-
 		EndDrawing();
 
 	}
 	// ----------------------------------------------------------
 	// De-initialization
+	UnloadTexture(texture);
 	CloseWindow();
 	return 0;
 }
