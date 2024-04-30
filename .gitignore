@@ -52,5 +52,8 @@ Mkfile.old
 dkms.conf
 
 # folder specific
-cmake-build-debug/
-.idea/
+.idea
+cmake-build-debug
+
+# Mac OS Specific
+.DS_STORE
